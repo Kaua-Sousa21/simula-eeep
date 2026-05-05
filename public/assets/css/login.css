@@ -1,0 +1,126 @@
+/* public/assets/css/login.css
+   ============================================================ */
+
+.login-pagina {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--verde-escuro) 0%, #1b5e20 50%, #388e3c 100%);
+  padding: var(--espaco-md);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Círculos decorativos de fundo */
+.login-pagina::before,
+.login-pagina::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,.05);
+}
+
+.login-pagina::before {
+  width: 400px;
+  height: 400px;
+  top: -100px;
+  right: -100px;
+}
+
+.login-pagina::after {
+  width: 300px;
+  height: 300px;
+  bottom: -80px;
+  left: -80px;
+}
+
+.login-card {
+  background: var(--branco);
+  border-radius: var(--raio-lg);
+  box-shadow: var(--sombra-lg);
+  padding: var(--espaco-2xl);
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+  z-index: 1;
+}
+
+.login-card__logo {
+  text-align: center;
+  margin-bottom: var(--espaco-xl);
+}
+
+.login-card__logo-icone {
+  width: 64px;
+  height: 64px;
+  background: var(--verde-escuro);
+  border-radius: var(--raio-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--espaco-sm);
+  font-size: 1.75rem;
+}
+.login-card__logo-img {
+  width: 120px;
+  height: auto;
+  margin: 0 auto var(--espaco-sm);
+  display: block;
+}
+
+
+.login-card__titulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--verde-escuro);
+  margin-bottom: var(--espaco-xs);
+}
+
+.login-card__subtitulo {
+  font-size: 0.875rem;
+  color: var(--texto-suave);
+}
+
+.login-card__form {
+  margin-top: var(--espaco-lg);
+}
+
+.input-senha-wrapper {
+  position: relative;
+}
+
+.input-senha-wrapper .form-input {
+  padding-right: 2.5rem;
+}
+
+.btn-toggle-senha {
+  position: absolute;
+  right: var(--espaco-sm);
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--cinza-medio);
+  font-size: 1rem;
+  padding: var(--espaco-xs);
+  transition: color 0.2s;
+}
+
+.btn-toggle-senha:hover {
+  color: var(--verde-escuro);
+}
+
+.login-card__rodape {
+  text-align: center;
+  margin-top: var(--espaco-lg);
+  font-size: 0.8rem;
+  color: var(--texto-suave);
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: var(--espaco-lg);
+  }
+}

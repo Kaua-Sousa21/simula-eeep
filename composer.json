@@ -1,0 +1,25 @@
+{
+  "name": "simula-eeep/sistema",
+  "description": "Sistema de gerenciamento de simulados ENEM",
+  "type": "project",
+  "require": {
+    "php": ">=8.1",
+    "phpoffice/phpspreadsheet": "^2.0",
+    "vlucas/phpdotenv": "^5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "SimulaEEEP\\": "src/"
+    },
+    "classmap": [
+      "src/config/",
+      "src/controllers/",
+      "src/models/",
+      "src/services/",
+      "src/helpers/"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true
+  }
+}
